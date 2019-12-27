@@ -9,9 +9,9 @@ const app = express();
 app.use(express.static(path.join(__dirname, '/../public')));
 app.use(express.static(path.join(__dirname, '/../dist')));
 
-app.listen(8888);
+app.listen(3000);
 
-const url = 'http://localhost:8888/index.html';
+const url = 'http://localhost:3000/index.html';
 
 describe('Mortgage Calculator', function () {
   this.timeout(8500);
