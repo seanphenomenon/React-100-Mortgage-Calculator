@@ -75,7 +75,7 @@ export default class App extends React.Component {
             </div>
             <input name='balance' type='text' className='form-control' value={this.state.balance} onChange={this.handleBalanceChange} />
           </div>
-          <label className='lead'>Interest Rate:</label>
+          <label className='lead'> Annual Interest Rate:</label>
           <div className='input-group mb-3'>
             <div className="input-group-prepend">
               <span className="input-group-text">%</span>
