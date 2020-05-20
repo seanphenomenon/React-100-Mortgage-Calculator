@@ -68,12 +68,14 @@ export default class App extends React.Component {
         <h3 className=" display-4 mt-4 mb-5">Mortgage Calculator</h3>
         <div className='row d-flex justify-content-center'>
         <form>
+          <div className='form-group'>
           <label className='lead'>Loan Balance:</label>
           <div className='input-group mb-3'>
             <div className="input-group-prepend">
               <span className="input-group-text">$</span>
             </div>
             <input name='balance' type='text' className='form-control' value={this.state.balance} onChange={this.handleBalanceChange} />
+          </div>
           </div>
           <label className='lead'> Annual Interest Rate:</label>
           <div className='input-group mb-3'>
@@ -91,13 +93,14 @@ export default class App extends React.Component {
             </select>
           </div>
           <button className='btn btn-dark btn-lg btn-block' type='button' name='submit' onClick={this.handleOnClick} > Calculate </button>
+          </form>
+        </div>
           <br></br>
           <br></br>
 
-          <div className='lead text-center' name='output' id='output' value={this.state.monthlyPayment}> Your estimated monthly payment is ${this.state.monthlyPayment}.</div>
-        </form>
+          <div className='lead' name='output' id='output' value={this.state.monthlyPayment}> Your estimated monthly payment is ${this.state.monthlyPayment}.</div>
         </div>
-      </div>
+
     );
   }
 }
