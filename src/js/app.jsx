@@ -65,7 +65,7 @@ export default class App extends React.Component {
     return (
       <div className='container'>
         {/* Insert JSX below */}
-        <h3 className=" display-4">Mortgage Calculator</h3>
+        <h3 className=" display-4 mt-4 mb-5">Mortgage Calculator</h3>
         <div className='row d-flex justify-content-center'>
         <form>
           <label className='lead'>Loan Balance:</label>
