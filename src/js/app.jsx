@@ -63,9 +63,10 @@ export default class App extends React.Component {
     // console.log (this.state.balance,this.state.rate,this.state.term)
 
     return (
-      <div className='container pt-3'>
+      <div className='container'>
         {/* Insert JSX below */}
-        <h3 className=" display-4 text-center">Mortgage Calculator</h3>
+        <h3 className=" display-4">Mortgage Calculator</h3>
+        <div className='row d-flex justify-content-center'>
         <form>
           <label className='lead'>Loan Balance:</label>
           <div className='input-group mb-3'>
@@ -95,6 +96,7 @@ export default class App extends React.Component {
 
           <div className='lead text-center' name='output' id='output' value={this.state.monthlyPayment}> Your estimated monthly payment is ${this.state.monthlyPayment}.</div>
         </form>
+        </div>
       </div>
     );
   }
